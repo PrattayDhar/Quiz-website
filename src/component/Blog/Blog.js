@@ -13,15 +13,13 @@ const Blog = () => {
                         <h2 className="accordion-header" id="headingOne">
                             <button className="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Difference between var, let and const keywords in JavaScript
+                                what is the purpose of react router
                             </button>
                         </h2>
                         <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                The scope of a var variable is functional scope. The scope of a let variable is block scope.
-                                The scope of a const
-                                variable is block scope. It can be updated and re-declared into the scope.
+                                ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.
                             </div>
                         </div>
                     </div>
@@ -29,17 +27,13 @@ const Blog = () => {
                         <h2 className="accordion-header" id="headingTwo">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                The Difference Between Regular Functions and Arrow Functions
+                                How does context api works
                             </button>
                         </h2>
                         <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                Unlike regular functions, arrow functions do not have their own this . The value of this
-                                inside an arrow function
-                                remains the same throughout the lifecycle of the function and is always bound to the value
-                                of this in the closest
-                                non-arrow parent function.
+                                The React Context API is a way for a React app to effectively produce global variables that can be passed around.This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on.Context is also touted as an easier, lighter approach to state management using Redux.n.
 
                             </div>
                         </div>
@@ -48,22 +42,14 @@ const Blog = () => {
                         <h2 className="accordion-header" id="headingThree">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Differences betweenforEach, map, filter, and find.
+                                useRef in React
                             </button>
                         </h2>
                         <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                The main difference between forEach and filter is that forEach just loop over the array and
-                                executes the callback but
-                                filter executes the callback and check its return value. If the value is true element
-                                remains in the resulting array but
-                                if the return value is false the element will be removed for the resulting array.
-                                difference between forEach and filter is that forEach just loop over the array and executes
-                                the callback but filter
-                                executes the callback and check its return value. If the value is true element remains in
-                                the resulting array but if the
-                                return value is false the element will be removed for the resulting array.
+                                The useRef is a hook that allows to directly create a reference to the DOM element in the functional component. Syntax: const refContainer = useRef(initialValue); The useRef returns a mutable ref object. This object has a property called .
+                                Use useRef if you need to manage focus, text selection, trigger imperative animations or integrating third-party libraries
 
                             </div>
                         </div>
