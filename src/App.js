@@ -8,6 +8,7 @@ import Navbar from './component/Navbar/Navbar';
 import Home from './component/Home/Home';
 import Quizstatic from './component/Quizstatic/Quizstatic';
 import Blog from './component/Blog/Blog';
+import Qustion from './component/Qustion/Qustion';
 
 function App() {
   const router = createBrowserRouter([
@@ -19,10 +20,20 @@ function App() {
           },
  },
         { path: '/quizstatic', element: <Quizstatic></Quizstatic> },
-        { path: '/blog', element: <Blog></Blog> }
+        { path: '/blog', element: <Blog></Blog> },
+        {
+          path: "/quiz/:id",
+          loader: async ({ params }) => {
+            return fetch(
+              `https://openapi.programming-hero.com/api/quiz/${params.id}`
+            );
+          },
+          element: <Qustion></Qustion>,
+        }
     
       ]
     },
+   
     {
       path:'*',element:'404 Error'
     }
