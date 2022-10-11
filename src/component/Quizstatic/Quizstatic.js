@@ -1,7 +1,7 @@
 import React from "react";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 class PieRechartComponent extends React.Component {
-  
+   
     COLORS = ["#8884d8", "#82ca9d", "#FFBB28", "#FF8042", "#AF19FF"];
     pieData = [
         {
@@ -41,7 +41,7 @@ class PieRechartComponent extends React.Component {
         }
         return null;
     };
-    
+
     render() {
         return (
             <PieChart width={1500} height={500}>

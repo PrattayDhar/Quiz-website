@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faEye } from '@fortawesome/free-solid-svg-icons'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
@@ -25,7 +25,7 @@ const Quiz = ({ element }) => {
     };
     const eye = () => {
         const i = "i";
-        toast(`${element.correctAnswer}` ,{
+        toast(`${element.correctAnswer}`, {
             toastId: i,
         });
     };
@@ -60,7 +60,7 @@ const Quiz = ({ element }) => {
 
 
             };
-           
+
             {(() => {
                 if (c.length !== 0) {
                     return c !== setCorrectans ? wrong() : "";
@@ -68,7 +68,7 @@ const Quiz = ({ element }) => {
                     return "";
                 }
             })()}
-          
+
 
             <ToastContainer />
         </div>
