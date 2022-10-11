@@ -19,10 +19,10 @@ function App() {
             return fetch('https://openapi.programming-hero.com/api/quiz');
           },
  },
-        { path: '/quizstatic', element: <Quizstatic></Quizstatic> },
-        { path: '/blog', element: <Blog></Blog> },
+        { path: 'quizstatic', element: <Quizstatic></Quizstatic> },
+        { path: 'blog', element: <Blog></Blog> },
         {
-          path: "/quiz/:id",
+          path: "quiz/:id",
           loader: async ({ params }) => {
             return fetch(
               `https://openapi.programming-hero.com/api/quiz/${params.id}`

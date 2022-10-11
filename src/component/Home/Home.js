@@ -22,7 +22,7 @@ const Home = () => {
                                             <h5 className="card-title">{subject.name}</h5>
                                             <h6>Number Of Question: {subject.total}</h6>
                                             <p>That Quiz is a website featuring multiple-choice, matching, and short-answer tests on a variety of core subjects.</p>
-                                            <Link to={`/quiz/${subject.id}`} className="btn btn-primary mt-5 ">Start Quiz</Link>
+                                            <Link to={`quiz/${subject.id}`} className="btn btn-primary mt-5 ">Start Quiz</Link>
 
                                         </div>
                                     </div>

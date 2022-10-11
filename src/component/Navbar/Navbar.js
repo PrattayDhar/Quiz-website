@@ -14,8 +14,8 @@ const Navbar = () => {
 
                         <div className="d-flex">
                             <Link className="navbar-brand px-3" to={'/'}>Home</Link>
-                            <Link className="navbar-brand px-3" to={'/quizstatic'}>Quiz Static</Link>
-                            <Link className="navbar-brand px-3" to={'/blog'}>Blog</Link>
+                            <Link className="navbar-brand px-3" to={'quizstatic'}>Quiz Static</Link>
+                            <Link className="navbar-brand px-3" to={'blog'}>Blog</Link>
 
                         </div>
                     </div>
